@@ -4,12 +4,19 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Sadigo</title>
+	<title>Sadigo {% block title %}{% endblock %}</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Diogenes Herminio">
 	<!-- Date: 2010-06-21 -->
 </head>
 <body>
-
+    <div id="header">
+        <h1>Sadigo</h1>
+    </div>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    <div id="footer">
+    </div>
 </body>
 </html>
