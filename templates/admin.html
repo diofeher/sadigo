@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 
+{% block title %}
+- administration
+{% endblock %}
+
 {% block content %}
-Admin's page
+Admin page
+
+    {% call form() %}
+        Title: {{ form.title.as_dd() }}
+        Description: {{ form.description.as_dd() }}
+        Tags: {{ form.tags.as_dd() }}
+        Video file: <input type="file" name="video" size="400000">
+        <input type="submit" value="Send Video">
+    {% endcall %}
+
 {% endblock %}

@@ -16,7 +16,7 @@ class Video(Base):
     __tablename__ = 'videos'
     id = Column(Integer, primary_key=True)
     name = Column(String(50), unique=True)
-    filepath = Column(String(50), unique=True)
+    filepath = Column(String(200), unique=True)
     
     def __init__(self, name, filepath)
         self.name = name

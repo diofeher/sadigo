@@ -22,6 +22,8 @@
         <h1><a href="{{ url_for('index') }}">Sadigo</a></h1>
         <div id="login">
             {% if session.logged_in %}
+                <span>hello administrator.</span>
+                <a href="{{ url_for('admin') }}">admin</a>
                 <a href="{{ url_for('logout') }}">logout</a>
             {% else %}
                 <a href="{{ url_for('login') }}">login</a>
