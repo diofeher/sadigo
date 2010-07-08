@@ -1,1 +1,18 @@
 Projeto de SMI.
+
+==============
+= Instalação =
+
+== Flask, werkzeug e Jinja2 ==
+ * easy_install pip
+ * pip install Flask
+ 
+== flask-fungiform ==
+ * git clone http://github.com/mitsuhiko/flask-fungiform.git
+ * cd flask-fungiform
+ * python setup.py install
+
+== fungiform ==
+ * git clone http://github.com/mitsuhiko/fungiform.git
+ * cd fungiform
+ * python setup.py install
