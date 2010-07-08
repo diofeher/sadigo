@@ -23,3 +23,12 @@ class LoginForm(Form):
                 raise ValidationError(u'Password incorrect')
         else:
             raise ValidationError(u'Unknown user')
+            
+class UploadForm(Form):
+    title = TextField(required=True)
+    description = TextField(required=True)
+    tags = TextField()
+    
+    def context_validate(self,data):
+        print 'testes'
+    
