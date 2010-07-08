@@ -16,3 +16,8 @@ Projeto de SMI.
  * git clone http://github.com/mitsuhiko/fungiform.git
  * cd fungiform
  * python setup.py install
+ 
+= Rodando o projeto =
+ * cd sadigo
+ * python sadigo.py
+ * Agora é só ir no browser e digitar http://localhost:5000/
