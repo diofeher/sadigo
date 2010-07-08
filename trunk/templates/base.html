@@ -7,11 +7,26 @@
 	<title>Sadigo {% block title %}{% endblock %}</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Diogenes Herminio">
+	<link charset="utf-8" type="text/css" href="static/style.css">
 	<!-- Date: 2010-06-21 -->
 </head>
+<style>
+#header h1 {
+    font-family:Georgia;
+    font-size:32px;
+    font-color:#3E4349;
+}
+</style>
 <body>
     <div id="header">
         <h1>Sadigo</h1>
+        <div id="login">
+            {% if session.logged_in %}
+                <a href="{{ url_for('logout') }}">logout</a>
+            {% else %}
+                <a href="{{ url_for('login') }}">login</a>
+            {% endif %}
+        </div>
     </div>
     <div id="content">
         {% block content %}{% endblock %}
