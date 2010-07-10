@@ -3,5 +3,16 @@
 {% block title %} Inicial {% endblock %}
 
 {% block content %}
-Hello
+
+    <form action="" method="POST">
+        <input type="text" name="search">
+        <input type="submit" value="search">
+    </form>
+    
+{% if videos %}
+    {% for video in videos %}
+        {{ video.name }}
+    {% endfor %}
+{% endif %}
+
 {% endblock %}
