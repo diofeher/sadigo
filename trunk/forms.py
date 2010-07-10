@@ -29,6 +29,7 @@ class UploadForm(Form):
     description = TextField(required=True)
     tags = TextField()
     
-    def context_validate(self,data):
-        print 'testes'
+    def context_validate(self, data):
+        if len(data['description'])>80:
+            raise ValidationError(u'Too long description')
     
